@@ -41,3 +41,12 @@ git restore --staged . OU NOM_DES_FICHIER_DU_ADD_QUE_ON_VEUT_SUPPRIMER
 ```
 
 La suppression du add peut se faire si on n'a pas fait de commit
+
+
+
+##Envoyer un commit sur le dépôt distant
+```bash
+git add .
+git commit -m "Titre du commit"
+git push origin main
+```
