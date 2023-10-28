@@ -42,9 +42,8 @@ git restore --staged . OU NOM_DES_FICHIER_DU_ADD_QUE_ON_VEUT_SUPPRIMER
 
 La suppression du add peut se faire si on n'a pas fait de commit
 
-
-
 ## Envoyer un commit sur le dépôt distant
+
 ```bash
 git add .
 git commit -m "Titre du commit"
@@ -56,6 +55,24 @@ git push origin main
 ```bash
 git branch
 ```
+
+## git Merge
+
+Si on est sur Develop et on veux mettre le travail de develop sur main:
+deplacer le header sur main
+
+```bash
+git checkout main
+git merge develop
+```
+
+les infos en plus de develop sont sur main. Mais tous ses modifications se sont opérés en local. Pour modifier dans le répository distant il faut faire
+
+```bash
+git push origin main
+```
+
+Pour ls bonnes pratiques, on va intégrer la notion de revue de code. Pour cela, on va créer une branche, faire des modifications, les envoyer sur le dépot distant, puis créer une pull request pour demender une revue de code.
 
 ## Création d'une Branche
 
