@@ -14,7 +14,7 @@ git log
 git show
 ```
 
-## Rédiger un commit
+## Rédiger un commit (bonne practique)
 
 ```Titre du commit
 
@@ -44,9 +44,21 @@ La suppression du add peut se faire si on n'a pas fait de commit
 
 
 
-##Envoyer un commit sur le dépôt distant
+## Envoyer un commit sur le dépôt distant
 ```bash
 git add .
 git commit -m "Titre du commit"
 git push origin main
+```
+
+## Connaitre les branches
+
+```bash
+git branch
+```
+
+## Création d'une Branche
+
+```bash
+git checkout -b NOM_BRANCH
 ```
